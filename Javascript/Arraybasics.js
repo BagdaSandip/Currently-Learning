@@ -35,3 +35,28 @@ console.log(myarr.indexOf(54))
 const newarr = myarr2.join()
 console.log(newarr);
 console.log(myarr2);
+//to merge the two array with the help of the concat method. 
+const RCB = ["Virat kohli","Rajat patidar","Josh Hazelwood"]
+const MI =["Rohit Sharma","Hardik Pandya","Jasprit Bumrah"]
+const BothTeam = RCB.concat(MI)
+console.log(BothTeam);
+
+const Otherteam = [...RCB, ...MI]
+console.log(Otherteam);
+
+//to spread out the array
+const Array1 = [1,2,3,[4,5],6,7,[4,5,6,[10,11]]]
+const real_another_array = Array1.flat(Infinity)
+console.log(real_another_array);
+
+//to know about the array or convert into array
+console.log(Array.isArray("Sandip"));
+console.log(Array.from("Sandip")); 
+
+//Return the new array from a set of elements,simply covert elemets into the array.
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+console.log(Array.of(score1,score2,score3));
+
+
